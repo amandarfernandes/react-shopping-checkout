@@ -1,0 +1,41 @@
+.CartMessage {
+    cursor:pointer;
+    color: #1F91D8;  
+}
+
+.Cart  {
+    width: 300px;
+    background: #eee;
+    border: 2px solid #aaa;
+    padding: 20px;
+}
+.CartItem {
+    width: 80%;
+    margin:0;
+    padding:0;
+    display:flex;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.CartItem * {
+    margin:0;
+    padding:0;
+}
+
+.CartItem img {
+    max-width: 80px;
+    max-height:80px;
+    object-fit: cover;
+    width: 40%;
+}
+
+.Detail {
+    font-size: 0.85em;
+    padding-left:10px;
+    width: 60%;
+}
+
+.Highlight {
+    font-weight: bold;
+}

@@ -1,0 +1,22 @@
+.BillItem p {
+    display:inline-block;
+    
+}
+
+.BillItem .Label {
+    width: 40%
+}
+.BillItem .Amount {
+    font-weight:700;
+    width:40%
+}
+
+.Red {
+    color:red;
+}
+
+.Total {
+    font-family: Poppins, sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+}
