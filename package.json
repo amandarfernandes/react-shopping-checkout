@@ -5,11 +5,14 @@
   "homepage": "https://amandarfernandes.github.io/react-shopping-checkout",
   "dependencies": {
     "axios": "^0.18.0",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
     "gh-pages": "^2.0.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-redux": "^5.0.7",
     "react-scripts": "2.0.4",
+    "react-test-renderer": "^16.6.0",
     "redux": "^4.0.0",
     "redux-thunk": "^2.3.0"
   },

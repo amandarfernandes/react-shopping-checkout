@@ -1,14 +1,17 @@
-.BillItem p {
-    display:inline-block;
-    
+.BillItem {
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    margin:0;
+    padding:0;
 }
 
 .BillItem .Label {
-    width: 40%
+    flex:1;
 }
 .BillItem .Amount {
     font-weight:700;
-    width:40%
+    padding-right: 1rem;
 }
 
 .Red {
@@ -17,6 +20,6 @@
 
 .Total {
     font-family: Poppins, sans-serif;
-    font-size: 2em;
+    font-size: 1.25em;
     font-weight: 600;
 }

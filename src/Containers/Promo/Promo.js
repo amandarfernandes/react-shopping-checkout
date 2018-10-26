@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
 import style from './Promo.module.css';
 import Aux from '../../Aux';
 import PromoForm from './PromoForm';
@@ -9,9 +10,7 @@ class Promo extends Component {
     }
 
     handleClick = () => {
-        this.setState((prevState)=>({open:!prevState.open}),()=>{
-            console.log(this.state)
-        });
+        this.setState((prevState)=>({open:!prevState.open}));
     }
 
     render() {
@@ -22,9 +21,14 @@ class Promo extends Component {
                 <p className={style.PromoMessage} 
                     onClick={this.handleClick}
                 >{promoText}</p>
-                {open?<PromoForm />:null}
+                {open?
+                <PromoForm applyPromo={this.props.applyPromo} />:null}
+                {this.props.promotion?<p>{this.props.promotion} APPLIED</p>:null}
             </Aux>
         )
     }
 }
-export default Promo;
+const mapStateToProps = state => ({
+    promotion: state.promo.promo
+})
+export default connect(mapStateToProps)(Promo);

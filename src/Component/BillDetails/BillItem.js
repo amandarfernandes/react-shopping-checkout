@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './BillItem.module.css'
 const BillItem = ({label,amount}) =>{
+  //console.log(label)
   const classes = [style.Amount,label==="Savings"?style.Red:null];
   const styles = [style.BillItem,label.includes('Total')?style.Total:null]
   return (

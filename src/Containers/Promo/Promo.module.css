@@ -1,0 +1,32 @@
+.PromoMessage {
+    cursor:pointer;
+    color: #1F91D8;  
+}
+
+.Promo {
+    display:flex;
+    border-radius: 4px;
+}
+
+
+.Promo input {
+    outline: none;
+    padding: 5px ;
+    font-size: 1rem;
+    border-radius: 4px 0 0 4px;
+    border:1px solid #1F91D8;
+}
+
+::placeholder {
+    opacity: 0.5;
+}
+
+.Promo  button {
+    outline: none;
+    font-size: 1em;
+    background: #1F91D8;
+    color:white;
+    border: 1px solid #1F91D8;
+    border-radius: 0 4px 4px 0; 
+}
+
